@@ -2,9 +2,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(245, 233, 233);
+    color:aliceblue;
+    /*background: rgb(245, 233, 233);*/
     font-family: 'Indie Flower', cursive;
+
 }
+
+/* ********************************** Fond d'écran *************************************** */
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: absolute; /* permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages*/
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .background-container .stars {
+      background: rgb(1, 2, 16) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      z-index: 0;
+  }
+  
+  .background-container .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 70s linear infinite;
+      -ms-animation:move-background 70s linear infinite;
+      -o-animation:move-background 70s linear infinite;
+      -webkit-animation:move-background 70s linear infinite;
+      animation:move-background 70s linear infinite;
+      
+  }
+  
+  .background-container .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+  
+     -moz-animation:move-background 150s linear infinite;
+     -ms-animation:move-background 150s linear infinite;
+     -o-animation:move-background 150s linear infinite;
+     -webkit-animation:move-background 150s linear infinite;
+     animation:move-background 150s linear infinite;
+  }
+  .background-container img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
 
 /* ****************************** Première page ********************************** */
 #accueil{
@@ -12,6 +114,7 @@
     height: 100vh;
     display:flex;
     flex-wrap: wrap;
+    z-index: 4;
     border: 2px solid blue;
 }
 
@@ -22,6 +125,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    z-index: 4;
     border: 2px solid rgb(0, 255, 98);
 }
 
@@ -37,7 +141,9 @@
 }
 
 /* ****************************** Profil ********************************** */
-
+#profil{
+    z-index: 4;
+}
 /* ****************************** deuxième page ********************************** */
 
 #parcourt{
@@ -45,5 +151,6 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    background: rgb(1, 2, 16);
     border: 2px solid rgb(200, 182, 18);
 }

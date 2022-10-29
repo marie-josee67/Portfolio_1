@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(245, 233, 233);
+}
+
+/* ****************************** Première page ********************************** */
+#accueil{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+}
+
+/* ****************************** Navigation ********************************** */
+#navigation{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 2px solid rgb(0, 255, 98);
+}
+
+#navigation ul{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    border: 2px solid rgb(255, 0, 204);
+    text-align: center;
+    font-size: 20px;
+    font-weight:600; /* gras du texte */
+}
+
+/* ****************************** Profil ********************************** */
+
+/* ****************************** deuxième page ********************************** */
+
+#parcourt{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border: 2px solid rgb(200, 182, 18);
+}

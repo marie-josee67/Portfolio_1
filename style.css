@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background: rgb(245, 233, 233);
+    font-family: 'Indie Flower', cursive;
 }
 
 /* ****************************** Première page ********************************** */
@@ -43,5 +44,6 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     border: 2px solid rgb(200, 182, 18);
 }

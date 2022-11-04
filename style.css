@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     color:aliceblue;
-    /*background: rgb(245, 233, 233);*/
+    background: rgb(245, 233, 233);
     font-family: 'Indie Flower', cursive;
 
 }
 
 /* ********************************** Fond d'écran *************************************** */
 
-@keyframes move-background {
+/*@keyframes move-background {
     from {
           -webkit-transform: translate3d(0px, 0px, 0px);
       }
@@ -46,7 +46,7 @@
   }
   
   .background-container{
-      position: absolute; /* permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages*/
+      position: absolute; permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages
       top: 0;
       left:0;
       bottom: 0;
@@ -107,7 +107,35 @@
     z-index: 3;
     right: 20px;
   }
+*/
 
+/* ****************************** Général ********************************** */
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 /* ****************************** Première page ********************************** */
 #accueil{
     width: 100vw;
@@ -144,13 +172,84 @@
 #profil{
     z-index: 4;
 }
-/* ****************************** deuxième page ********************************** */
+/* ****************************** deuxième pages ********************************** */
 
 #parcourt{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(1, 2, 16);
+    border: 2px solid rgb(200, 182, 18);
+}
+
+.diplome{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+
+.logiciels{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+
+.loisir{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+
+/* ****************************** troisième pages ********************************** */
+
+#projets{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     background: rgb(1, 2, 16);
-    border: 2px solid rgb(200, 182, 18);
+    border: 2px solid rgb(18, 109, 200);
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 25%;
+    margin:5px;
+    border-radius: 500;
+}
+
+/* ****************************** quatrième pages ********************************** */
+
+#contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(1, 2, 16);
+    color: white;
+    border: 2px solid rgb(54, 18, 200);
+}
+
+#icons{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
 }

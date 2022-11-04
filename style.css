@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     color:aliceblue;
-    background: rgb(245, 233, 233);
+   /* background: rgb(245, 233, 233);*/
     font-family: 'Indie Flower', cursive;
 
 }
 
 /* ********************************** Fond d'écran *************************************** */
 
-/*@keyframes move-background {
+@keyframes move-background {
     from {
           -webkit-transform: translate3d(0px, 0px, 0px);
       }
@@ -46,7 +46,7 @@
   }
   
   .background-container{
-      position: absolute; permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages
+      position: absolute; /*permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages*/
       top: 0;
       left:0;
       bottom: 0;
@@ -107,17 +107,10 @@
     z-index: 3;
     right: 20px;
   }
-*/
+
 
 /* ****************************** Général ********************************** */
-h1{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+
 
 h2{
     display: flex;
@@ -143,7 +136,6 @@ h3{
     display:flex;
     flex-wrap: wrap;
     z-index: 4;
-    border: 2px solid blue;
 }
 
 /* ****************************** Navigation ********************************** */
@@ -154,7 +146,6 @@ h3{
     flex-wrap: wrap;
     padding: 10px;
     z-index: 4;
-    border: 2px solid rgb(0, 255, 98);
 }
 
 #navigation ul{
@@ -162,7 +153,6 @@ h3{
     width: 100%;
     justify-content:space-around;
     align-items: center;
-    border: 2px solid rgb(255, 0, 204);
     text-align: center;
     font-size: 20px;
     font-weight:600; /* gras du texte */
@@ -170,7 +160,38 @@ h3{
 
 /* ****************************** Profil ********************************** */
 #profil{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding:20px;
     z-index: 4;
+}
+
+#profil h1{
+    width: 100vw;
+    font-size: 50px;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+}
+
+#profil p{
+    width: 40%;
+    height: 70vh;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 200px 0 10px 0 ;
+}
+
+/*  mettre la photo en rond */
+#profil img{
+    height: 250px;
+    width: 250px;
+    border-radius: 500px;
+    margin: 170px 10px 10px 10px;
 }
 /* ****************************** deuxième pages ********************************** */
 
@@ -181,6 +202,7 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     background: rgb(1, 2, 16);
+    margin:20px;
     border: 2px solid rgb(200, 182, 18);
 }
 
@@ -190,6 +212,7 @@ h3{
     width: 100%;
     height: 25%;
     font-size: 20px;
+    border: 2px solid rgb(255, 0, 204);
 }
 
 .experience{
@@ -198,6 +221,7 @@ h3{
     width: 100%;
     height: 25%;
     font-size: 20px;
+    border:3px solid rgb(214, 83, 35);
 }
 
 .logiciels{
@@ -206,6 +230,7 @@ h3{
     width: 100%;
     height: 25%;
     font-size: 20px;
+    border: 2px solid rgb(0, 255, 98);
 }
 
 .loisir{
@@ -214,6 +239,7 @@ h3{
     width: 100%;
     height: 25%;
     font-size: 20px;
+    border: 5px solid red;
 }
 
 /* ****************************** troisième pages ********************************** */
@@ -233,7 +259,8 @@ h3{
     width: 45%;
     height: 25%;
     margin:5px;
-    border-radius: 500;
+    border-radius: 500 px;
+    border: 5px solid red;
 }
 
 /* ****************************** quatrième pages ********************************** */

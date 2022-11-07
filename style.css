@@ -115,8 +115,8 @@
 h2{
     display: flex;
     flex-wrap: wrap;
-    font-size: 30px;
     width: 100%;
+    font-size: 28px;
     margin:10px 0 0 90px;
 }
 
@@ -207,6 +207,28 @@ h3{
     border: 2px solid rgb(200, 182, 18);
 }
 
+.CV{
+    width: 100vw;
+    height: 10%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.CV h2{
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.CV a {
+    font-size: 25px;
+}
+
 .diplome{
     display: flex;
     flex-wrap: wrap;
@@ -215,12 +237,24 @@ h3{
     font-size: 20px;
     border: 2px solid rgb(255, 0, 204);
 }
+.Cerfificats{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 10%;
+    border: 2px solid rgb(115, 44, 145);
+}
+
+.Cerfificats a{
+    font-size: 25px;
+    margin: 0 30px 0 30px ;
+}
 
 .experience{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: 20px;
     border:3px solid rgb(214, 83, 35);
 }
@@ -229,7 +263,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: 20px;
     border: 2px solid rgb(0, 255, 98);
 }
@@ -246,7 +280,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: 20px;
     border: 5px solid red;
 }

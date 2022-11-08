@@ -11,121 +11,26 @@
 /* ********************************** Fond d'écran *************************************** */
 
 @keyframes changeColors{
-    0%   { background: #33CCCC; }
-    20%  { background: #33CC36; }
-    40%  { background: #B8CC33; }
-    60%  { background: #FCCA00; }
-    80%  { background: #33CC36; }
-    100% { background: #33CCCC; }
+    0%   { background: #1e5799; }
+    15%  { background: #2ce0bf; }
+    35%  { background: #76dd2c ; }
+    55%  { background: #f1c40f; }
+    75%  { background: #e02cbf ; }
+    95%  { background: #9b59b6 ; }
+    100% { background: #1e5799; }
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0;
+    padding: 0;
     animation-name:changeColors;
     animation-duration: 30s;
     animation-iteration-count:infinite;/* Permet de répéter a l'infinit le changement de couleur */
     z-index: 0;
 }
-
-/*@keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  @-webkit-keyframes move-background {
-    from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-  @-moz-keyframes move-background {    
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-      @-webkit-keyframes move-background {
-      from {
-          -webkit-transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          -webkit-transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
-  .background-container{
-      position: absolute; /*permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages
-      top: 0;
-      left:0;
-      bottom: 0;
-      right: 0;
-  }
-  
-  .background-container .stars {
-      background: rgb(1, 2, 16) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: block;
-      z-index: 0;
-  }
-  
-  .background-container .twinkling{
-      width:10000px;
-      height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-      background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-      
-      -moz-animation:move-background 70s linear infinite;
-      -ms-animation:move-background 70s linear infinite;
-      -o-animation:move-background 70s linear infinite;
-      -webkit-animation:move-background 70s linear infinite;
-      animation:move-background 70s linear infinite;
-      
-  }
-  
-  .background-container .clouds{
-      width:10000px;
-      height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-      background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 3;
-  
-     -moz-animation:move-background 150s linear infinite;
-     -ms-animation:move-background 150s linear infinite;
-     -o-animation:move-background 150s linear infinite;
-     -webkit-animation:move-background 150s linear infinite;
-     animation:move-background 150s linear infinite;
-  }
-  .background-container img{
-    height: 70vh;
-    width:70vh;
-    position: absolute;
-    z-index: 3;
-    right: 20px;
-  }*/
 
 
 /* ****************************** Général ********************************** */
@@ -348,11 +253,10 @@ h3{
 
 #contact{
     width: 100vw;
-    height: 100vh;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
    /* background: rgb(1, 2, 16);*/
-    color: white;
     border: 2px solid rgb(54, 18, 200);
 }
 

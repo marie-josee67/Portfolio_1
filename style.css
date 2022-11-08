@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:aliceblue;
+   /* color:aliceblue;*/
    /* background: rgb(245, 233, 233);*/
     font-family: 'Indie Flower', cursive;
 
@@ -10,7 +10,26 @@
 
 /* ********************************** Fond d'écran *************************************** */
 
-@keyframes move-background {
+@keyframes changeColors{
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation-name:changeColors;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;/* Permet de répéter a l'infinit le changement de couleur */
+    z-index: 0;
+}
+
+/*@keyframes move-background {
     from {
           -webkit-transform: translate3d(0px, 0px, 0px);
       }
@@ -46,7 +65,7 @@
   }
   
   .background-container{
-      position: absolute; /*permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages*/
+      position: absolute; /*permet de le mettre que sur la première page sinon mettre en fixed pour toute les pages
       top: 0;
       left:0;
       bottom: 0;
@@ -106,7 +125,7 @@
     position: absolute;
     z-index: 3;
     right: 20px;
-  }
+  }*/
 
 
 /* ****************************** Général ********************************** */
@@ -135,17 +154,19 @@ h3{
     display:flex;
     flex-wrap: wrap;
     z-index: 4;
+    /* border: 2px solid red;*/
 }
 
 /* ****************************** Navigation ********************************** */
 #navigation{
     height: 50px;
     width: 100%;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     padding: 10px;
     z-index: 4;
     /*text-decoration: none; ne marche pas  */
+    /* border: 2px solid purple;*/
 }
 
 #navigation ul{
@@ -156,6 +177,7 @@ h3{
     text-align: center;
     font-size: 25px;
     font-weight:600; /* gras du texte */
+    /* border: 2px solid rgb(200, 182, 18);*/
 }
 
 /* ****************************** Profil ********************************** */
@@ -166,6 +188,7 @@ h3{
     justify-content: space-around;
     padding:20px;
     z-index: 4;
+    /* border: 2px solid green;*/
 }
 
 #profil h1{
@@ -174,6 +197,7 @@ h3{
     justify-content: center;
     align-items: left;
     text-align: center;
+    /* border: 2px solid blue;*/
 }
 
 #profil p{
@@ -184,6 +208,7 @@ h3{
     align-items: center;
     text-align: justify;
     padding: 170px 10px 10px 20px ;
+    /* border: 2px solid red;*/
 }
 
 /*  mettre la photo en rond */
@@ -192,6 +217,7 @@ h3{
     width: 250px;
     border-radius: 500px;
     margin: 120px 10px 10px 10px;
+    /* border: 2px solid rgb(200, 182, 18);*/
     /*filter:grayscale(); /* filtre noir et blanc sur la photo */
 }
 /* ****************************** deuxième pages ********************************** */
@@ -202,9 +228,9 @@ h3{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: rgb(1, 2, 16);
+    /*background: rgb(1, 2, 16);*/
     margin:20px;
-    border: 2px solid rgb(200, 182, 18);
+   /* border: 2px solid rgb(200, 182, 18);*/
 }
 
 .CV{
@@ -215,7 +241,7 @@ h3{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 
 .CV h2{
@@ -232,17 +258,19 @@ h3{
 .diplome{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    height: 25%;
+    height: 35%;
     font-size: 20px;
-    border: 2px solid rgb(255, 0, 204);
+    padding:0 0 0 20px;
+   /* border: 2px solid rgb(255, 0, 204);*/
 }
 .Cerfificats{
     display: flex;
     flex-wrap:wrap;
     width: 100%;
     height: 10%;
-    border: 2px solid rgb(115, 44, 145);
+    /*border: 2px solid rgb(115, 44, 145);*/
 }
 
 .Cerfificats a{
@@ -259,13 +287,22 @@ h3{
     border:3px solid rgb(214, 83, 35);
 }*/
 
+.formation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+    padding:0 0 0 20px;
+}
+
 .logiciels{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 20%;
+    height: 10%;
     font-size: 20px;
-    border: 2px solid rgb(0, 255, 98);
+   /* border: 2px solid rgb(0, 255, 98);*/
 }
 
 /* Icon PHP mis en rond */
@@ -281,9 +318,9 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
+    height: 10%;
     font-size: 20px;
-    border: 5px solid red;
+   /* border: 5px solid red;*/
 }
 
 /* ****************************** troisième pages ********************************** */
@@ -293,7 +330,7 @@ h3{
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: rgb(1, 2, 16);
+   /* background: rgb(1, 2, 16);*/
     border: 2px solid rgb(18, 109, 200);
 }
 
@@ -314,7 +351,7 @@ h3{
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: rgb(1, 2, 16);
+   /* background: rgb(1, 2, 16);*/
     color: white;
     border: 2px solid rgb(54, 18, 200);
 }

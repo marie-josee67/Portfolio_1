@@ -170,7 +170,7 @@ h3{
     padding:0 0 0 20px;
    /* border: 2px solid rgb(255, 0, 204);*/
 }
-.Cerfificats{
+.Certificats{
     display: flex;
     flex-wrap:wrap;
     width: 100%;
@@ -179,7 +179,7 @@ h3{
     /*border: 2px solid rgb(115, 44, 145);*/
 }
 
-.Cerfificats a{
+.Certificats a{
     font-size: 25px;
     margin: 0 30px 0 30px ;
 }

@@ -40,8 +40,12 @@ h2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 50px;
     font-size: 28px;
-    margin:10px 0 0 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0 0 10px;
 }
 
 h3{
@@ -52,6 +56,7 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
 /* ****************************** Première page ********************************** */
 #accueil{
     width: 100vw;
@@ -273,13 +278,22 @@ h3{
     border: 5px solid red;
 }
 
+#projets .card img{
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
 /* ****************************** quatrième pages ********************************** */
 
 #contact{
     width: 100vw;
-    height: 200px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 0 0 20px;
    /* background: rgb(1, 2, 16);*/
    /* border: 2px solid rgb(54, 18, 200);*/
 }
@@ -290,6 +304,7 @@ h3{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding:50px 0 0 0;
     /*border: 5px solid rgb(190, 209, 21);*/
 }
 

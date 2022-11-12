@@ -259,7 +259,7 @@ h3{
     padding:0 0 0 20px;
    /* background: rgb(1, 2, 16);*/
     justify-content: space-evenly;/* Les éléments sont répartis équitablement et sont séparés par le même espace */
-    border: 2px solid rgb(18, 109, 200);
+    /*border: 2px solid rgb(18, 109, 200);*/
 }
 
 #projets .card h3{
@@ -267,7 +267,7 @@ h3{
     height: 10%;
     font-size: 15px;
     text-align: center;
-    border:5px solid purple;
+    /*border:5px solid purple;*/
 }
 
 .card{
@@ -276,7 +276,7 @@ h3{
     width: 45%;
     height: 40%;
     border-radius: 500 px;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
 }
 
 #projets .card img{
@@ -285,8 +285,9 @@ h3{
     /*padding: 5px;*/
     justify-content: center;
     align-items: center;
-    image-rendering: smooth;/* Redimensionne l'image et maximise l'apparence de l'image */
-    border:3px solid rgb(176, 12, 141);
+    image-rendering: smooth;/* Redimensionne l'image et maximise son apparence */
+    border-radius: 10px;
+    /*border:3px solid rgb(176, 12, 141);*/
 }
 /* ****************************** quatrième pages ********************************** */
 

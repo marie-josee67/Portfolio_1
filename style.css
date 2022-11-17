@@ -77,16 +77,17 @@ h3{
     /*z-index: 4;*/
     background:cornsilk;
     opacity: 50%;
+    align-items: center;
+    text-align: center;
     /*text-decoration: none; ne marche pas  */
     /* border: 2px solid purple;*/
 }
 
-#navigation ul{
+#navigation a{
     display: flex;
     width: 100%;
-    justify-content:space-around;
-    align-items: center;
-    text-align: center;
+    justify-content:space-between;
+    margin: 0 50px 0 50px;
     font-size: 25px;
     font-weight:600; /* gras du texte */
     /* border: 2px solid rgb(200, 182, 18);*/

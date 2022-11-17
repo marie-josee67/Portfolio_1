@@ -56,7 +56,7 @@ h3{
     align-items: center;
     justify-content: center;
 }
-
+/* ********************************* buttons nav barre ************************** */
 /* effet bordure en vert des bouttons codes récupérer sur internet */
 button{
     font-size: 20px;
@@ -132,6 +132,7 @@ button:after {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 /* ****************************** Première page ********************************** */
 #accueil{
     width: 100vw;
@@ -209,9 +210,11 @@ button:after {
     width: 250px;
     border-radius: 500px;
     margin: -50px 10px 10px 10px;
-    /* border: 2px solid rgb(200, 182, 18);*/
+    box-shadow: black 0px 20px 30px -10px; /* ombre de l'image pour un effet volume */
     /*filter:grayscale(); /* filtre noir et blanc sur la photo */
+    /* border: 2px solid rgb(200, 182, 18);*/
 }
+
 /* ****************************** deuxième pages ********************************** */
 
 #parcourt{

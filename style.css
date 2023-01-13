@@ -56,7 +56,9 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
 /* ********************************* buttons nav barre ************************** */
+
 /* effet bordure en vert des bouttons codes récupérer sur internet */
 button{
     font-size: 20px;
@@ -67,6 +69,7 @@ button{
     transition: all 150ms ease-in-out;
     
 }
+
 button:hover {
     box-shadow: 0 0 20px 0 green inset, 0 0 20px 8px green;
     opacity: 1;
@@ -134,6 +137,7 @@ button:after {
 }
 
 /* ****************************** Première page ********************************** */
+
 #accueil{
     width: 100vw;
     height: 100vh;
@@ -144,6 +148,7 @@ button:after {
 }
 
 /* ****************************** Navigation ********************************** */
+
 #navigation{
     display: flex;
     height: 50px;
@@ -159,6 +164,7 @@ button:after {
 }
 
 /* . nav permet de positionner les bouton dans la barre de navigation */
+
 .nav{
     width: 100%;
     display: flex;
@@ -174,6 +180,7 @@ button:after {
 }
 
 /* ****************************** Profil ********************************** */
+
 #profil{
     display: flex;
     flex-wrap: wrap;
@@ -205,6 +212,7 @@ button:after {
 }
 
 /*  mettre la photo en rond */
+
 #profil img{
     height: 250px;
     width: 250px;
@@ -332,6 +340,7 @@ button:after {
     text-decoration: none;
     color:black;
 }
+
 /* ****************************** troisième pages ********************************** */
 
 #projets{
@@ -372,6 +381,7 @@ button:after {
     border-radius: 10px;
     /*border:3px solid rgb(176, 12, 141);*/
 }
+
 /* ****************************** quatrième pages ********************************** */
 
 #contact{

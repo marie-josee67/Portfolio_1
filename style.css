@@ -233,6 +233,7 @@ button:after {
     justify-content: space-around;
     /*background: rgb(1, 2, 16);*/
     padding:0 0 0 20px;
+    line-height: 25px; /* espace entre les lignes */
    /* border: 2px solid rgb(200, 182, 18);*/
 }
 
@@ -252,6 +253,7 @@ button:after {
     text-align: center;
     justify-content: center;
     align-items: center;
+
 }
 
 .CV a {

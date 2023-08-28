@@ -10,15 +10,15 @@
 
 /* ********************************** Fond d'écran *************************************** */
 
-/*@keyframes changeColors{
+@keyframes changeColors{
     0%   { background: #1e5799; }
-    15%  { background: #06dbb4; }
+    15%  { background: #04b090; }
     35%  { background: #64c222 ; }
-    55%  { background: #f1c40f; }
+    55%  { background: #dea30e; }
     75%  { background: #e02cbf ; }
     95%  { background: #9b59b6 ; }
     100% { background: #1e5799; }
-}*/
+}
 
 #container {
     display: flex;
@@ -26,8 +26,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #49091b;
-    /*animation-name:changeColors;
+    /*background-color: grey;*/
+    animation-name:changeColors;
     animation-duration: 30s;
     animation-iteration-count:infinite;/* Permet de répéter a l'infinit le changement de couleur */
     z-index: 0;
